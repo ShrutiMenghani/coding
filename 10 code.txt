@@ -1,0 +1,14 @@
+class Printer {
+    void printDocument(String docName) {
+        synchronized(this) {
+            for (int i = 1; i <= 3; i++) {
+                System.out.println("Printing " + docName + " page " + i);
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+            }
+        }
+    }
+}

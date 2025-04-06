@@ -1,0 +1,23 @@
+class MyException extends Exception {
+    MyException(String message) {
+        super(message);
+    }
+}
+
+public class CustomThrow {
+    static void validate(int age) throws MyException {
+        if (age < 18) {
+            throw new MyException("Custom Exception: Underage");
+        } else {
+            System.out.println("Valid age");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            validate(16);
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

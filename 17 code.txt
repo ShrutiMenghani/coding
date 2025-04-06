@@ -1,0 +1,34 @@
+interface Device {
+    void powerOn();
+}
+
+interface SmartDevice extends Device {
+    void connectToWiFi();
+}
+
+interface SmartHomeSystem extends SmartDevice {
+    void voiceControl();
+}
+
+class GoogleHome implements SmartHomeSystem {
+    public void powerOn() {
+        System.out.println("Device powered on");
+    }
+
+    public void connectToWiFi() {
+        System.out.println("Connected to WiFi");
+    }
+
+    public void voiceControl() {
+        System.out.println("Voice control activated");
+    }
+}
+
+public class SmartSystemTest {
+    public static void main(String[] args) {
+        GoogleHome home = new GoogleHome();
+        home.powerOn();
+        home.connectToWiFi();
+        home.voiceControl();
+    }
+}

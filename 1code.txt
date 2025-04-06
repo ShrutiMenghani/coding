@@ -1,0 +1,41 @@
+interface Icalculator{
+int add( int a,int b);
+int sub( int a,int b);
+int multi( int a,int b);
+int div( int a,int b);
+}
+class Calculator implements Icalculator{
+public int add (int a,int b){
+int c=a+b;
+return c;
+}
+public int sub(int a,int b){
+int d=a_b;
+return d;
+}
+public int multi(int a,int b){
+int m=a*b;
+return m;
+}
+int div(int a,int b){
+int p=a/b;
+return p;
+}
+public static void main(String[] args){
+Calculator R=new Calculator();
+int result1 = r.add(20,45);
+int result2 = r.sub(20,45);
+int result3 = r.multi(20,45);
+int result4 = r.div(20,45);
+System.out.println(result1);
+System.out.println(result2);
+System.out.println(result3);
+System.out.println(result4);
+
+}
+
+
+
+
+
+

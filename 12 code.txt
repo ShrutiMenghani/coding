@@ -1,0 +1,34 @@
+interface Camera {
+    void takePhoto();
+}
+
+interface MusicPlayer {
+    void playMusic();
+}
+
+interface GPS {
+    void navigate();
+}
+
+class SmartPhone implements Camera, MusicPlayer, GPS {
+    public void takePhoto() {
+        System.out.println("Taking a photo...");
+    }
+
+    public void playMusic() {
+        System.out.println("Playing music...");
+    }
+
+    public void navigate() {
+        System.out.println("Navigating with GPS...");
+    }
+}
+
+public class MultiInterfacePhone {
+    public static void main(String[] args) {
+        SmartPhone phone = new SmartPhone();
+        phone.takePhoto();
+        phone.playMusic();
+        phone.navigate();
+    }
+}

@@ -1,0 +1,25 @@
+public class Greeting {
+
+    
+    public void greet() {
+        System.out.println("Hello!");
+    }
+
+    
+    public void greet(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+   
+    public void greet(String name, String timeOfDay) {
+        System.out.println("Good " + timeOfDay + ", " + name + "!");
+    }
+
+    public static void main(String[] args) {
+        Greeting g = new Greeting();
+
+        g.greet();
+        g.greet("Alice");
+        g.greet("Bob", "morning");
+    }
+}

@@ -1,0 +1,19 @@
+class Person {
+    String name;
+    
+    
+    Person(String personName) {
+        name = personName;
+    }
+
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person p1 = new Person("shruti");
+        p1.display();
+    }
+}

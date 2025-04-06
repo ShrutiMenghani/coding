@@ -1,0 +1,26 @@
+class Object {
+    void exist() {
+        System.out.println("I exist in the universe");
+    }
+}
+
+class Machine extends Object {
+    void operate() {
+        System.out.println("I can perform tasks");
+    }
+}
+
+class Rocket extends Machine {
+    void launch() {
+        System.out.println("Rocket is launching!");
+    }
+}
+
+public class RocketTest {
+    public static void main(String[] args) {
+        Rocket r = new Rocket();
+        r.exist();    
+        r.operate(); 
+        r.launch();   
+    }
+}

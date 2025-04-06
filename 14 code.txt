@@ -1,0 +1,40 @@
+class Vehicle {
+    Vehicle() {
+        System.out.println("Vehicle is created");
+    }
+
+    void fuel() {
+        System.out.println("Vehicle uses fuel");
+    }
+}
+
+class Car extends Vehicle {
+    Car() {
+        super(); 
+        System.out.println("Car is created");
+    }
+
+    void wheels() {
+        System.out.println("Car has 4 wheels");
+    }
+}
+
+class ElectricCar extends Car {
+    ElectricCar() {
+        super(); 
+        System.out.println("Electric Car is created");
+    }
+
+    void battery() {
+        System.out.println("Electric car uses battery");
+    }
+}
+
+public class MultilevelConstructor {
+    public static void main(String[] args) {
+        ElectricCar eCar = new ElectricCar();
+        eCar.fuel();      
+        eCar.wheels();    
+        eCar.battery();  
+    }
+}

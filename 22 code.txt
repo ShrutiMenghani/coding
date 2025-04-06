@@ -1,0 +1,18 @@
+class Parent {
+    static void greet() {
+        System.out.println("Hello from Parent");
+    }
+}
+
+class Child extends Parent {
+    static void greet() {
+        System.out.println("Hello from Child");
+    }
+}
+
+public class StaticInheritance {
+    public static void main(String[] args) {
+        Parent.greet();  
+        Child.greet();   
+    }
+}
